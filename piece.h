@@ -17,4 +17,6 @@ int pieceType(piece Piece);
 
 char getSymb(piece Piece);
 
+char int2symb(int type);
+
 #endif

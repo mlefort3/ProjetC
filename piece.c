@@ -6,6 +6,8 @@
 piece newPiece(char symb, int type) {
     piece Piece;
     Piece.symb = symb;
+    //Piece.symb = malloc(sizeof(typeof(char)));
+    Piece.type = type;
     return Piece;
 }
 
@@ -33,4 +35,16 @@ int pieceType(piece Piece) {
 
 char getSymb(piece Piece) {
     return Piece.symb;
+}
+
+char int2symb(int type) {
+    if (type == 0) {
+        return 'C';
+    }
+    else if (type == 1) {
+        return 'T';
+    }
+    else {
+        return '_';
+    }
 }

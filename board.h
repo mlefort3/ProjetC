@@ -7,14 +7,22 @@ typedef struct boardPieces {
   piece *pieces;
 } board;
 
+board initBoard();
+
 int isOver(board Board);
 
-int setPiece(board Board, piece Piece, int location);
+int setPiece(board Board, int location, int type);
 
 piece getPiece(board Board, int location);
 
 int putPiece(piece Piece, int location);
 
 int removePiece(int location);
+
+int movePiece(int debut, int fin);
+
+void showBoard(board Board);
+
+char showPiece(board Board, int location);
 
 #endif
